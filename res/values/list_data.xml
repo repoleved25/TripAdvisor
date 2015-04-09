@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="packages">
+    	<item>package 1</item>
+    	<item>package 2</item>
+    	<item>package 3</item>
+    	<item>package 4</item>
+    	<item>package 5</item>
+    	<!-- <item>Adobe Flash</item>
+        <item>Adobe Photoshop</item>
+        <item>Adobe Premiere</item>
+        <item>Adobe Reader</item>
+        <item>Adobe Illustrator</item> -->
+    </string-array>
+    <string-array name="places">
+    	<item>place 1</item>
+    	<item>place 2</item>
+    	<item>place 3</item>
+    	<item>place 4</item>
+    	<item>place 5</item>
+    	
+    </string-array>
+</resources>

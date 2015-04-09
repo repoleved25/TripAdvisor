@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/latitude"
+        android:layout_below="@+id/latitude"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="longitude" />
+
+    <EditText
+        android:id="@+id/placename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="placename" />
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/placename"
+        android:layout_below="@+id/placename"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="latitude" />
+
+    <EditText
+        android:id="@+id/maxtimetaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/longitude"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="maximum time"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/mintimetaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/maxtimetaken"
+        android:layout_below="@+id/maxtimetaken"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Minimum time"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mintimetaken"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mintimetaken"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="48dp"
+        android:text="Addplace" />
+
+</RelativeLayout>

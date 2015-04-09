@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sunset">
+     
+    <RelativeLayout 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+		<Button
+		    android:id="@+id/signup"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/authButton"
+		    android:text="Sign Up" />
+		
+		<EditText
+		    android:id="@+id/username"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/password"
+		    android:layout_alignParentTop="true"
+		    android:layout_alignRight="@+id/password"
+		    android:layout_marginTop="70dp"
+		    android:ems="10"
+		    android:focusable="true"
+		    android:hint="Enter username"
+		    android:imeOptions="actionNext" />
+		
+		<EditText
+		    android:id="@+id/password"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="16dp"
+		    android:layout_below="@+id/username"
+		    android:ems="10"
+		    android:hint="Enter Password"
+		    android:imeOptions="actionDone"
+		    android:password="true" >
+		
+		    <requestFocus />
+		</EditText>
+		
+		<Button
+		    android:id="@+id/login"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/signup"
+		    android:text="login" />
+		
+			<com.facebook.widget.LoginButton
+		        android:id="@+id/authButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_above="@+id/btn_sign_in"
+		        />
+		
+		    <com.google.android.gms.common.SignInButton
+		        android:id="@+id/btn_sign_in"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="25dp"
+		        android:layout_alignParentBottom="true">
+		    </com.google.android.gms.common.SignInButton>
+
+	</RelativeLayout>
+</LinearLayout>

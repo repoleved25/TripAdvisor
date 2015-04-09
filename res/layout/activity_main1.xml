@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+
+    <EditText
+        android:id="@+id/city_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nagpur" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:onClick="authenticateLogin"
+        android:text="Submit" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Current Location"
+        android:layout_below="@+id/city_name"
+        android:id="@+id/checkBox1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false" />
+
+	<EditText
+        android:id="@+id/time_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/submitbtn"
+        android:hint="Days: 1" >
+    </EditText>
+
+	<Button
+	    android:id="@+id/time_submit"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/time_edit"
+	    android:layout_marginTop="63dp"
+	    android:text="Packages" />
+
+</RelativeLayout>
